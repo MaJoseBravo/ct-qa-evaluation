@@ -46,7 +46,6 @@ You SHOULD modify this file providing clear instructions on how to run your test
 > All the dependencies for your testing should be declared into the docker-compose file, composer packages or node packages. The only required software in the evaluator pc will be git and docker, <b>nothing more will be installed.</b>
 
 As end to end frameworks selections you SHOULD choose:
-- [Cucumber](https://cucumber.io/)
 - [Cypress](https://www.cypress.io/)
 - [Selenium](https://www.selenium.dev/)
 
