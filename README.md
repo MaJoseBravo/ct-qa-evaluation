@@ -43,7 +43,7 @@ Now enter into your [app](http://localhost) and you should see this page
 You SHOULD modify this file providing clear instructions on how to run your tests.
 
 > **Warning**
-> All the dependencies for your testing should be declared into the docker-compose file, composer packages or node packages. The only required software in the evaluator pc will be git and docker, <b>nothing more will be installed.</b>
+> All the dependencies for your testing should be declared into the docker-compose file, composer packages or node packages. The only required software in the evaluator's pc will be git and docker, <b>nothing more will be installed.</b>
 
 As end to end frameworks selections you SHOULD choose:
 - [Cypress](https://www.cypress.io/)
