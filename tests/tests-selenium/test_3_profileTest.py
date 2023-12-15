@@ -23,16 +23,17 @@ class ProfileTest(unittest.TestCase):
         options.add_argument("--disable-dev-shm-usage")
         return WebDriver(options=options)
 
-    def test_profile_process(self):
-        # Iniciar el navegador y abrir la URL del proyecto
-        self.driver.get(url)
         
-        # Iniciar sesión con credenciales
-        login_page = LoginPage(self.driver)
+    def test_profile_process(self):
+        self.driver.get(url) # Navegar a la URL
+        login_page = LoginPage(self.driver) # Crear una instancia de LoginPage
         login_page.click_login()
         user_data = load_user_data()
-        email, password = user_data['email'], user_data['password']
-        login_page.login(email, password)
+        email = user_data['email']
+        password = user_data['password']
+        login_page.enter_email(email)
+        login_page.enter_password(password)
+        login_page.click_save_login()
 
         # Manejar posibles errores de inicio de sesión
         error_message = "These credentials do not match our records."
@@ -42,8 +43,6 @@ class ProfileTest(unittest.TestCase):
         # Navegar al perfil y realizar acciones en la página de perfil
         login_page.navigate_to_profile()
         login_page.click_profile()
-
-        # Esperar brevemente para permitir que la página se cargue completamente (podrías reemplazar esto con WebDriverWait)
         time.sleep(3)
 
     def tearDown(self):
