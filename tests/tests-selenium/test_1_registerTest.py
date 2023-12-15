@@ -29,8 +29,8 @@ class RegisterTest(unittest.TestCase):
         registration_page.navigate_to_registration()
 
         # Rellenar el formulario de registro
-        user = 'Michael2034'
-        email = 'Michael2034_a@example.com'
+        user = 'Michael20345'
+        email = 'Michael20345_a@example.com'
         password = '3434565698thg'
         registration_page.enter_name(user)
         registration_page.enter_email(email)

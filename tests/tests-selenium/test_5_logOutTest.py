@@ -2,8 +2,8 @@ import unittest
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.chrome.options import Options
 from page_objects.loginPage import LoginPage
-from utils.user_data_utils import load_user_data
-from utils.url_proyecto import url
+from user_data_utils import load_user_data
+from url_proyecto import url
 
 class LogOutTest(unittest.TestCase):
 
