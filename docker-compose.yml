@@ -2,7 +2,7 @@
 version: '3'
 services:
     php.dev:
-        image: kytel0925/php:8.1-debian-apache-dev
+        image: kytel0925/php:8.2-debian-apache-dev
         extra_hosts:
             - 'host.docker.internal:host-gateway'
         ports:
@@ -30,8 +30,6 @@ services:
             MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
             MYSQL_ROOT_HOST: "%"
             MYSQL_DATABASE: '${DB_DATABASE}'
-            MYSQL_USER: '${DB_USERNAME}'
-            MYSQL_PASSWORD: '${DB_PASSWORD}'
             MYSQL_ALLOW_EMPTY_PASSWORD: 1
         volumes:
             - 'sail-mysql:/var/lib/mysql'
