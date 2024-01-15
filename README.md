@@ -9,7 +9,7 @@ In order to develop on this project please ensure that your machine fulfill the 
 
 _You must also dominate this two technologies._
 
-This app is based on [laravel/jestream](https://jetstream.laravel.com/installation.html) application starter kit.
+This app is based on [laravel/jetstream](https://jetstream.laravel.com/installation.html) application starter kit.
 
 ### Steps
 
@@ -27,16 +27,14 @@ Now enter into your [app](http://localhost) and you should see this page
 
 ## Evaluation
 
-### Part 1: Prepare the next scenarios with end to end testings
+### Prepare the next scenarios with end to end testings
 
 - Register a new test account
 - Login with the new test account
-- Load the user profile
 - Change the password
 - Logout
 - Login with the new password
 - Update my profile name
-- Check if the name was refreshed in the user actions toolbar
 - Logout
 - Login with an unregister account (validate the failure message)
 
@@ -49,12 +47,6 @@ As end to end frameworks selections you SHOULD choose:
 - [Cypress](https://www.cypress.io/)
 - [Selenium](https://www.selenium.dev/)
 
-### Part 2: with the Laravel test framework (PHPUnit)
-- access the index route and check if the response code is 200
-- seed a test user and submit a login check all the response codes
-- fake and array of 100 numbers, sort it test if the first and last elements are the same number
-
-_this part is optional and SHOULD be resolved with the best code practices_
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
